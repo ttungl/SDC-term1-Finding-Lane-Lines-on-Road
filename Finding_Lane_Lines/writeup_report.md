@@ -27,7 +27,7 @@ Figure 3: Canny edges detection.
 
 We then mask the trapezoid shape (region of interest) to the image above to use for identifying the lane lines. I have found that the best combination for the hough transform parameters is as follows: rho = 1; theta = (2* np.pi / 180); threshold = 20; min_line_length = 5; and max_line_gap = 20; 
 <img width="960" src="https://github.com/ttungl/Self-Driving-Car-ND-term-1/blob/master/Finding_Lane_Lines/test_images_out/masked_edges_region_interest.jpg">
-Figure 4: Masked edges region of interest.
+Figure 4: Masked edges region of interest. 
 
 For the draw lines function, we have added the calculation of the slope and the upper bound of the lines for both sides. Then we draw the lines based on the resulted points on left line and right line. 
 <img width="960" src="https://github.com/ttungl/Self-Driving-Car-ND-term-1/blob/master/Finding_Lane_Lines/test_images_out/hough_lines.jpg">

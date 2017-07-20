@@ -6,6 +6,7 @@ The goals / steps of this project are the following:
 
 ---
 * Dependencies: OpenCV and Python3
+* Techniques used for the pipeline implementation: Grayscale, Gaussian Smoothing, Canny edges detection, mask region of interest, and Hough transform.
 ---
 
 ### Reflection

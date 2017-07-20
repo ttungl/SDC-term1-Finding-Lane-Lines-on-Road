@@ -5,7 +5,7 @@ The goals / steps of this project are the following:
 * Reflect on your work in a written report
 
 ---
-Dependencies: OpenCV and Python3
+* Dependencies: OpenCV and Python3
 ---
 
 ### Reflection

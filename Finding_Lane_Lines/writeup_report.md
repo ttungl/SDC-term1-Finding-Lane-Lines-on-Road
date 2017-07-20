@@ -27,7 +27,7 @@ We then mask the trapezoid shape (region of interest) to the image above to use 
 <img width="960" src="https://github.com/ttungl/Self-Driving-Car-ND-term-1/blob/master/Finding_Lane_Lines/test_images_out/masked_edges_region_interest.jpg">
 Figure 4: Masked edges region of interest.
 
-For the draw lines function, we calculate the slope and the upper bound of the lines for both sides. Then we draw the lines based on the resulted points on left line and right line. 
+For the draw lines function, we have added the calculation of the slope and the upper bound of the lines for both sides. Then we draw the lines based on the resulted points on left line and right line. 
 <img width="960" src="https://github.com/ttungl/Self-Driving-Car-ND-term-1/blob/master/Finding_Lane_Lines/test_images_out/hough_lines.jpg">
 Figure 5: Hough transform on the edges detection of the image.
 
@@ -38,13 +38,9 @@ Finally, we merge the output of the hough transform image with the original imag
 
 ### 2. Identify potential shortcomings with your current pipeline
 
-One potential shortcoming would be what would happen when ... 
-
-Another shortcoming could be ...
+One potential shortcoming would be that the noise is too large for light-colored lane lines as in the "challenge.mp4". The current pipeline is not robust enough to detect the left lane line correctly. We ran the challenge.mp4 video, the right lane line is good but the left one is not. Then, we ran the raw detected edges without using drawing lines function, it showed that a lot of lines are poped-up when the car passes the white road. Note that the current pipeline method works fine with the dark road. I still try to figure out to fix this issue. 
 
 
 ### 3. Suggest possible improvements to your pipeline
 
-A possible improvement would be to ...
-
-Another potential improvement could be to ...
+A possible improvement for the current pipeline would be to modify the vertices. Instead of the trapezoid shape, we could split the shape into two seperated shapes for left lane line and right lane line. 

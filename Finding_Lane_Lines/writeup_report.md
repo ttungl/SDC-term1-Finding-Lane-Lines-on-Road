@@ -22,10 +22,13 @@ We convert the original image to the grayscale image as in Figure 2 below:
 Figure 2: Gaussian Smoothing.
 
 We apply the Canny edges detection algorithm to extract the edges of the Gaussian Smoothing image, we still keep the low threshold and high threshold at 50 and 150 as recommended, respectively. Note, I have tried to change these values, but the videos have been crashed when running for some reasons. 
+* Update: we have improved the code and the low threshold and high threshold are changed to 28 and 90, respectively.
+
 <img width="960" src="https://github.com/ttungl/Self-Driving-Car-ND-term-1/blob/master/Finding_Lane_Lines/test_images_out/canny_edges_lines.jpg">
 Figure 3: Canny edges detection.
 
 We then mask the trapezoid shape (region of interest) to the image above to use for identifying the lane lines. I have found that the best combination for the hough transform parameters is as follows: rho = 1; theta = (2* np.pi / 180); threshold = 20; min_line_length = 5; and max_line_gap = 20; 
+* Update: We have improved the code with the new updated parameters as follows: rho=2; threshold=15; min_line_length = 10; others are unchanged.
 <img width="960" src="https://github.com/ttungl/Self-Driving-Car-ND-term-1/blob/master/Finding_Lane_Lines/test_images_out/masked_edges_region_interest.jpg">
 Figure 4: Masked edges region of interest. 
 
@@ -36,7 +39,7 @@ Figure 5: Hough transform on the edges detection of the image.
 Finally, we merge the output of the hough transform image with the original image, the result is as below.
 <img width="960" src="https://github.com/ttungl/Self-Driving-Car-ND-term-1/blob/master/Finding_Lane_Lines/test_images_out/solidYellowCurve_modified.jpg">
 
-
+The outputs of the pipeline method are good enough to keep the lines on the correct sides.
 
 ### 2. Identify potential shortcomings with your current pipeline
 

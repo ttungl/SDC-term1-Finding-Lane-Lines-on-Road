@@ -4,6 +4,11 @@ The goals / steps of this project are the following:
 * Make a pipeline that finds lane lines on the road
 * Reflect on your work in a written report
 
+* The results are as below.
+
+<img src="https://github.com/ttungl/SDC-term1-Behavioral-Cloning/blob/master/gifs/lane1.gif" height="149" width="270"> <img src="https://github.com/ttungl/SDC-term1-Behavioral-Cloning/blob/master/gifs/lane2.gif" height="149" width="270"> <img src="https://github.com/ttungl/SDC-term1-Behavioral-Cloning/blob/master/gifs/lane3.gif" height="149" width="270">
+
+
 ---
 * Dependencies: OpenCV and Python3
 * Techniques used for the pipeline implementation: Grayscale, Gaussian Smoothing, Canny edges detection, mask region of interest, and Hough transform.

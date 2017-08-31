@@ -6,7 +6,7 @@ The goals / steps of this project are the following:
 
 * The results are as below.
 
-<img src="https://github.com/ttungl/SDC-term1-Behavioral-Cloning/blob/master/gifs/lane1.gif" height="149" width="270"> <img src="https://github.com/ttungl/SDC-term1-Behavioral-Cloning/blob/master/gifs/lane2.gif" height="149" width="270"> <img src="https://github.com/ttungl/SDC-term1-Behavioral-Cloning/blob/master/gifs/lane3.gif" height="149" width="270">
+<img src="https://github.com/ttungl/SDC-term1-Finding-Lane-Lines-on-Road/blob/master/Finding_Lane_Lines/gifs/lane1.gif" height="149" width="270"> <img src="https://github.com/ttungl/SDC-term1-Finding-Lane-Lines-on-Road/blob/master/Finding_Lane_Lines/gifs/lane2.gif" height="149" width="270"> <img src="https://github.com/ttungl/SDC-term1-Finding-Lane-Lines-on-Road/blob/master/Finding_Lane_Lines/gifs/lane3.gif" height="149" width="270">
 
 
 ---

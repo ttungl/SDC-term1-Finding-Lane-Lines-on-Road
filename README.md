@@ -1,4 +1,6 @@
 ##### Self-Driving-Car-ND Term-1
+[![Udacity - Self-Driving Car NanoDegree](https://s3.amazonaws.com/udacity-sdc/github/shield-carnd.svg)](http://www.udacity.com/drive)
+
 Project: Finding lane lines on the road
 * [Videos compilation](https://www.youtube.com/watch?v=PjG6rRI8ce0)
 * [Report](https://github.com/ttungl/SDC-term1-Finding-Lane-Lines-on-Road/blob/master/Finding_Lane_Lines/writeup_report.md)
